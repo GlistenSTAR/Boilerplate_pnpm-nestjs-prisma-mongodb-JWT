@@ -32,6 +32,24 @@
 $ pnpm install
 ```
 
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file.
+
+* `NODE_ENV` : is a system environment variable that Node exposes into running scripts
+* `DATABASE_URL` : is an environment variable that Prisma uses to connect to your database.
+* `JWT_SECRET` : A random string used to sign JWTs
+
+## Generate the Prisma Schema
+```bash
+$ prisma generate
+```
+
+or 
+```bash
+$ prisma db push
+```
+
 ## Running the app
 
 ```bash
