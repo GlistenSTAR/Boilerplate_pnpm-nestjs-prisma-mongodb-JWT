@@ -27,8 +27,7 @@ export class UserController {
     @Res() res: Response,
   ): Promise<void> {
     try {
-      const { user, token }: { user: Partial<User>; token: string } =
-        await this.userService.signUp(newUser);
+      const { user, token }: { user: Partial<User>; token: string } = await this.userService.signUp(newUser);
 
       delete user.password;
 
