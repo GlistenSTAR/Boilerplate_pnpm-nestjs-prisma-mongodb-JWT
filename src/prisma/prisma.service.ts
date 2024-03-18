@@ -4,10 +4,10 @@ import { PrismaClient } from '@prisma/client';
 @Injectable()
 export class PrismaService extends PrismaClient implements OnModuleInit {
   async onModuleInit() {
-    try{
+    try {
       await this.$connect();
-    } catch(err){
-      console.log("DB is not connected");
+    } catch (err) {
+      console.log('DB is not connected');
     }
   }
 

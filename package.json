@@ -1,8 +1,8 @@
 {
   "name": "backend",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Template backend using nest.js and prisma.",
+  "author": "Glisten",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
